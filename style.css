@@ -3,3 +3,135 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --text:#312D64;
+    --text-pink:#B52184;
+    --bg-white:#FFFFFF;
+    --bg-white-2:#F9F4FB;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg-white-2);
+}
+
+h1, h2{
+    font-weight: 800;
+    color: var(--text-pink);
+}
+
+h2{
+    font-size: 30px;
+}
+
+p, span{
+    color: var(--text);
+}
+
+#app{
+    text-align: center;
+    width: 100%;
+}
+
+header{
+    padding: 0 40px;
+}
+header img{
+    width: 350px;
+}
+header h1{
+    font-size: 32px;
+}
+header p{
+    font-weight: 500;
+    font-size: 20px;
+}
+header a img{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    height: 90px;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    background-color: var(--text);
+}
+main .content{
+    padding: 20px;
+    width: 350px;
+    text-align: left;
+    border-radius: 20px;
+    background-color: var(--bg-white);
+}
+main .content img{
+    margin-bottom: 30px;
+    height: 80px;
+    width: 80px;
+}
+main .content h2{
+    font-size: 29px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+main .content p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+section{
+    text-align: left;
+    display: grid;
+    padding: 60px;
+    gap: 40px;
+}
+section form{
+    display: grid;
+    gap: 24px;
+    width: 100%;
+}
+section form input, section form textarea{
+    width: 100%;
+    border: 1px solid var(--text);
+    border-radius: 16px;
+    padding: 12px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text);
+}
+section form input::placeholder, section form textarea::placeholder{
+    color: var(--text);
+}
+section form textarea{
+    resize: none;
+}
+section form button{
+    padding: 12px;
+    width: 200px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--text);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--bg-white);
+}
+
+footer{
+    padding: 32px;
+    font-size: 14px;
+    background-color: var(--text);
+}
+footer p{
+    color: var(--bg-white);
+}
+
+@media (min-width: 780px) {
+    
+}
